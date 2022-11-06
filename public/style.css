@@ -1,0 +1,212 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body {
+
+	font-family: "Roboto",sans-serif;
+	background-image: url('./4850037.jpg');
+}
+.screen {
+	display: none;
+}
+.screen.active {
+	display: block;
+}
+.app {
+	display: grid;
+	position: fixed;
+	top: 0px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	height: 100%;
+	max-width: 500px;
+	
+	
+}
+
+.col-of-2{
+	display: flex;
+}
+
+.marg{
+	margin: 0px 25px 0px 10px;
+}
+
+.secondary_text{
+	color: #2998ff;
+	display: inline-block;
+	background-image: linear-gradient(to right, #2998ff, #2998ff);
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 1.5px;
+    transition: all .2s;
+}
+
+
+
+.secondary_text:hover{
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, .2);
+}
+
+.homeimage{
+	height: 70%;
+	width: 70%;
+	border-radius: 40%;
+}
+
+
+.join-screen .form {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	padding: 50px;
+}
+.join-screen .form .form-input {
+	margin: 10px 0px;
+}
+.join-screen .form h1 {
+	font-size: 40px;
+	margin-bottom: 20px;
+	line-height:45px;
+	font-family: "Montserrat",sans-serif;
+}
+.join-screen .form button {
+	background: #2998ff;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	outline: none;
+	font-size: 16px;
+	font-weight: 600;
+	border-radius: 20px;
+}
+.join-screen .form #join-id b {
+	color: #2998ff;
+	display: block;
+	margin-top: 20px;
+}
+.join-screen .form #join-id span {
+	display: inline-block;
+	font-size: 25px;
+	font-family: monospace;
+	color: #111;
+	padding: 10px;
+	border: 1px solid #2998ff;
+	margin-top: 5px;
+}
+.join-screen .form .form-input label {
+	color: #2998ff;
+	font-size: 18px;
+}
+.join-screen .form .form-input input {
+	display: block;
+	margin:10px 0px;
+	width: 100%;
+	max-width: 200px;
+	border: 1px solid #2998ff;
+	color: #111;
+	font-size: 20px;
+	padding: 10px;
+   
+}
+
+.fs-screen {
+	padding: 20px;
+}
+.fs-screen .file-input {
+	width: 100%;
+	border: 2px  #2998ff;
+}
+.fs-screen .file-input label {
+	display: block;
+	width: 100%;
+	padding: 40px 50px;
+	text-align: center;
+	color: #111;
+	font-size: 18px;
+}
+.fs-screen .file-input input {
+	display: none;
+}
+.fs-screen .files-list {
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+.fs-screen .files-list .title {
+	width: 100%;
+	margin: 20px 0px;
+	color: #2998ff;
+}
+.fs-screen .files-list .item {
+	width: 33%;
+	min-width: 200px;
+	border: 1px solid #eee;
+	box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.05);
+
+}
+.fs-screen .files-list .item .progress {
+	padding: 30px;
+	text-align: center;
+	font-size: 50px;
+	color: #111;
+	font-family: "Montserrat";
+}
+.fs-screen .files-list .item .filename {
+	padding: 5px;
+	font-size: 18px;
+	border-top: 1px solid #eee;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: relative;
+    border: none;
+    cursor: pointer;
+ 
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.form_input:focus{
+    outline: none;
+    box-shadow: 0 1rem rgba(black,0.1);
+    border-bottom: 4px solid #2998ff;
+}
